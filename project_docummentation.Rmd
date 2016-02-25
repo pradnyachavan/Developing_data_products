@@ -1,0 +1,47 @@
+---
+title: "Developing data products"
+author: "Pradnya chavan"
+date: "February 24, 2016"
+output: html_document
+---
+
+
+# Introduction
+This app allows you visualize crime rate in San Francisco, CA region from year 2003 to 2015. We downloaded this open source data from kaggle.com. This provided lot of versatility in terms of information as per crime type and ction taken against them.
+
+
+# Using this app
+
+You will see following screen as you start.
+![alt text](start.png)
+
+On the Left side of the panel you can see options to select and on the right side you can see san francisco map highlighting area in red where that crime took place
+
+## Options to select
+
+#### Crime type- Dropdown
+ It lets you select type of crime- Warrants,Larceny,Theft, Vandalism, etc.
+ 
+#### Event time
+  You can select cases as per then time they took place-AM/PM
+  
+#### Year- Dropdown
+  It lets you select set of cases with specific year. It ranges from  year 2003 to 2015
+  
+
+  
+## Output
+
+#### Map
+  Affected region are highlighted in red on the map of San Francisco
+  
+#### Total no. of cases
+  Total of  events which are highlighted on the map
+  
+#### Cases Resolution
+  Categories of action taken on the selected cases- Bar plot
+ 
+
+# Reference
+http://www.kaggle.com
+

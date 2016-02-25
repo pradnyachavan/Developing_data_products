@@ -1,0 +1,55 @@
+Crime Mapping in San Francisco
+========================================================
+author:Pradnya Chavan 
+date: 02/24/2016
+autosize: true
+
+Introduction
+========================================================
+
+According to the FBI report, crime continued to fall around the country in 2015. However in the Bay area, the improvements are uneven. That is why we thought of giving close look to this region and exploring related data.
+
+
+Data
+========================================================
+
+We got data from an open source platform. This data consist of following information
+
+- Date and time at which crime took place
+- Location of the crime
+- Action taken on each case
+- Police department district who handled exh of the cases
+
+There were in total 878,050 cases ranging from year 2003 to 2015
+
+Findings
+========================================================
+Following is the freqency of Different crimes
+
+```{r, echo=FALSE}
+library(ggplot2)
+setwd("C:/my data/Coursera_data science/developing data products/Project")
+crime<-read.csv("crime.csv")
+par(mar = c(4,10,2,0.5))
+barplot(sort(table(crime$Category)),decrasing=TRUE,space = 0.5,las=2,cex.names = 0.65,horiz=TRUE,col = "navy")
+```
+***
+
+Following is the Frequency of categories of actions taken by PD
+
+```{r, echo=FALSE}
+library(ggplot2)
+setwd("C:/my data/Coursera_data science/developing data products/Project")
+crime<-read.csv("crime.csv")
+par(mar = c(4,14,2,0.5))
+barplot(sort(table(crime$Resolution)),decrasing=TRUE,space = 0.5,las=2,cex.names = 0.6,horiz=TRUE,col = "navy")
+
+```
+
+Final Output
+========================================================
+We built this App in order to visualize Sans Francisco Crime rate spreaded across different regions. It let user set different parameters as per user's interest.
+
+Following is sample output
+![alt text](start.png)
+
