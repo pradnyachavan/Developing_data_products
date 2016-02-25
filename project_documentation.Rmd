@@ -42,6 +42,6 @@ On the Left side of the panel you can see options to select and on the right sid
   Categories of action taken on the selected cases- Bar plot
  
 
-# Reference
+# Data Source
 http://www.kaggle.com
 

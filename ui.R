@@ -3,6 +3,7 @@ library(shiny)
 library(ggmap)
 library(lubridate)
 library(dplyr)
+require(markdown)
 
 
 # Define UI for application that draws a histogram
@@ -48,12 +49,18 @@ ui <- shinyUI(fluidPage(
       
       
     ),
+    
+  
     # Show a plot of the generated distribution
     mainPanel(
-      h3("Crime Locations"),
-      plotOutput("distPlot",width = "100%")
-      
-      
+        tabsetPanel(type = "tabs",
+        tabPanel( h4("Crime Locations"),plotOutput("distPlot",width = "100%")),
+        tabPanel(h4("User Manual"),includeMarkdown("project_documentation.Rmd"))
+                 )
     )
+    
+    
+    
+    
   )
 ))

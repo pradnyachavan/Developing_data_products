@@ -23,5 +23,7 @@ server <- shinyServer(function(input, output) {
     par(mar = c(4,14,2,0.5))
     barplot(sort(table(crime2$Resolution)),decrasing=TRUE,space = 0.5,las=2,cex.names = 0.6,horiz=TRUE,col = "navy")
   })
+  
+  
 })
 

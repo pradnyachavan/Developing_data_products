@@ -1,4 +1,4 @@
-Crime Mapping in San Francisco
+Crime Mapping of San Francisco
 ========================================================
 author:Pradnya Chavan 
 date: 02/24/2016
@@ -7,8 +7,9 @@ autosize: true
 Introduction
 ========================================================
 
-According to the FBI report, crime continued to fall around the country in 2015. However in the Bay area, the improvements are uneven. That is why we thought of giving close look to this region and exploring related data.
+According to the FBI report, crime continued to fall around the country in 2015. However in the Bay area, the improvements are uneven. That is why we thought of giving closer look to this region and explore related data.
 
+source (http://www.sfchronicle.com/crime/article/U-S-crime-drops-again-but-gains-uneven-in-Bay-6536129.php)
 
 Data
 ========================================================
@@ -38,5 +39,5 @@ Final Output
 We built this App in order to visualize Sans Francisco Crime rate spreaded across different regions. It let user set different parameters as per user's interest.
 
 Following is sample output
-![alt text](start.png)
+![alt text](start.PNG)
 
